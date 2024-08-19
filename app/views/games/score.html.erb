@@ -1,0 +1,11 @@
+<h1>SCORED</h1>
+
+<p>Answered: <%= @answered %></p>
+<p>Time: <%= @date_end %></p>
+<% if @found == true %>
+<p>Time: <%= @date_end %></p>
+<p>WIN!</p>
+<% else %>
+<p>YOU LOSE</p>
+<% end %>
+<%= link_to "Try again", new_path, class: "link-padding" %>
